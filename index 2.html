@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>m4heen Responsive Preview</title>
+<style>
+  body {
+    background:#0e0e0e;
+    color:#f5f5f5;
+    font-family:'Times New Roman', Times, serif;
+    padding:2rem;
+    display:flex;
+    justify-content:center;
+  }
+  .container { max-width:700px; width:100%; }
+  h1 { text-align:center; text-decoration:underline; margin-bottom:1.5rem; font-size:2rem; }
+  p { margin-bottom:1rem; line-height:1.6; font-size:1rem; }
+  a { color:#66f; text-decoration:underline; transition: opacity 0.2s; }
+  blockquote { border-left:2px solid #66f; margin-left:0; padding-left:1rem; font-style:italic; color:#bbbbbb; }
+  .stars, .end-line { text-align:center; margin-top:2rem; font-size:1.5rem; transition: transform 0.3s ease; }
+  .stars:hover { transform: scale(1.2) rotate(10deg); }
+  @media (min-width:768px) {
+    body { padding:3rem; }
+    h1 { font-size:2.5rem; }
+    p { font-size:1.1rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Hozaifa Maheen</h1>
+  <p>I study at Bangladesh Open University. Beyond my academic focus, I have equal fascination towards technology, monochrome art, music, MMA, film, fashion, philosophy, and psychology. I enjoy exploring how creativity and logic come together to shape new ideas.</p>
+  <p>Only goal for the year: consume less media and spend more time reading books, especially cutting down on mindless scrolling.</p>
+  <p>Here’s my <a href="https://instagram.com/hozaifamaheen" target="_blank" class="link">Instagram</a> and <a href="mailto:hozaifaibnejashim@gmail.com" class="link">Email</a>.</p>
+  <blockquote>“The mind is everything. What you think, you become.”</blockquote>
+  <p class="end-line">That’s all for now. I’ll keep adding more as I grow and learn.</p>
+  <div class="stars">⋆⋆⋆</div>
+</div>
+<script>
+const links = document.querySelectorAll('.link');
+links.forEach(l => {
+  l.addEventListener('mouseenter', () => l.style.opacity = '0.7');
+  l.addEventListener('mouseleave', () => l.style.opacity = '1');
+});
+</script>
+</body>
+</html>
